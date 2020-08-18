@@ -1,9 +1,11 @@
 
 import React, { Component } from 'react';
 import ReactDom from 'react-dom'
+import 'react-bootstrap'
 import Header from './header/Header'
 import { Provider } from 'react-redux'
 import store from '../store'
+import Screen from './screen/screen'
 
 
 class App extends Component {
@@ -15,6 +17,7 @@ class App extends Component {
     return ( 
       <Provider store={store}>
         <Header />
+        <Screen />
       </Provider>
      );
   }

@@ -1,6 +1,8 @@
 
 import React, { Component } from 'react'
-import './headerStyle.css'
+
+
+
 
 export class Header extends Component {
   render() {
@@ -22,7 +24,8 @@ export class Header extends Component {
 
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">Navbar</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -57,6 +60,10 @@ export class Header extends Component {
         </form>
       </div>
     </nav>
+    <div className="away">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente repellendus porro fuga illo. Magnam laboriosam quis ut reiciendis. Cumque fugit consequuntur labore voluptas corporis et necessitatibus fugiat vitae, neque perferendis numquam unde deleniti minus eligendi nostrum quas, accusantium architecto sunt ipsam sequi provident sapiente quae fuga sed! Doloremque natus consequuntur esse temporibus, provident, harum explicabo quisquam amet sit incidunt nesciunt eum veniam nemo dicta dignissimos cum aspernatur exercitationem neque. Qui doloremque quibusdam voluptatum consequuntur beatae quaerat reprehenderit doloribus tempore autem nesciunt hic asperiores nihil, soluta omnis laudantium eos obcaecati voluptate! Accusamus omnis ipsam quod eius sunt aliquid porro itaque?
+    </div>
+      </div>
     )
   }
 }
