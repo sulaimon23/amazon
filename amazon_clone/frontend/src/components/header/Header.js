@@ -22,19 +22,41 @@ export class Header extends Component {
 
 
     return (
-        <>
-        <div className="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-        <button onClick={closeHandler} className="w3-bar-item w3-large">Close &times;</button>
-          <a href="#" className="w3-bar-item w3-button">Link 1</a>
-          <a href="#" className="w3-bar-item w3-button">Link 2</a>
-          <a href="#" className="w3-bar-item w3-button">Link 3</a>
-        </div>
-      <div className="main">
-      <button id="openNav" className="w3-button  w3-xlarge" onClick={openHandler}>☰</button>
-      <a>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora molestias enim, asperiores doloribus nam fuga ullam similique commodi in nobis recusandae ipsa, rerum placeat facilis molestiae dolores earum cum. Expedita vero tempora, voluptates fugit enim exercitationem, possimus facilis doloribus repudiandae ratione recusandae, quia nostrum labore eligendi? Velit, voluptatum. Fugiat suscipit quibusdam laudantium exercitationem officiis, sit non aliquid dolor laboriosam. Ipsa minima harum eveniet! Saepe nesciunt repellendus fugiat voluptatem. Eos repellendus itaque illo. Quibusdam, nisi ipsum quo quae soluta maxime hic? Perferendis nostrum placeat minus, magnam corporis eaque temporibus facilis? Ad architecto fugiat eius iure minima veritatis asperiores! Corrupti, perspiciatis deleniti?</a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <a className="navbar-brand" href="#">Navbar</a>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+    
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Link</a>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a className="dropdown-item" href="#">Action</a>
+              <a className="dropdown-item" href="#">Another action</a>
+              <div className="dropdown-divider"></div>
+              <a className="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form className="form-inline my-2 my-lg-0">
+          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
-      </>
+    </nav>
     )
   }
 }
