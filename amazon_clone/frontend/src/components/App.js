@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 import ReactDom from 'react-dom'
-import 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './header/Header'
 import { Provider } from 'react-redux'
 import store from '../store'
@@ -17,7 +18,7 @@ class App extends Component {
     return ( 
       <Provider store={store}>
         <Header />
-        <Screen />
+        {/* <Screen /> */}
       </Provider>
      );
   }
